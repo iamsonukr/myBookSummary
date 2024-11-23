@@ -37,6 +37,8 @@ a:hover {
     color: white;
     margin: 0;
     padding: 0;
+    display: flex !important;
+    flex-wrap: wrap !important;
 }
 
 #menu li {
