@@ -18,6 +18,65 @@
         crossorigin="anonymous"></script>
 
     <title>My Book Shelf</title>
+    <style>
+              #productpage {
+            padding: 2rem 0;
+        }
+        .product-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .product-card img {
+            width: 70%;
+            height: auto;
+        }
+        .product-card h3 {
+            font-size: 1.25rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .product-card p {
+            margin: 0.25rem 0;
+        }
+        .product-card .price {
+            color: #060329;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .product-card button {
+            background-color: #072e57;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+        .row2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           flex-wrap: wrap;
+        
+            width: 60% ;
+        }
+        .jin-order{
+            display: flex;
+            justify-content: center;
+            padding: 30px 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,67 +100,72 @@
         </div>
     </div>
 
-    <div class="container" id="productpage">
-        <div class="row">
-            <div class="col-md-4" id="">
-                <div id="card">
-                    <img src="images/enola1.jpg" alt="Denim Jeans" style="width:100%">
+    <div class="jin-order" id="">
+        <div class="row2">
+            <!-- Enola Holmes -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/enola1.jpg" alt="Enola Holmes">
                     <h3>Enola Holmes</h3>
                     <p>- Nancy Springer</p>
                     <p class="price">$31.99</p>
                     <p><button>Add to Cart</button></p>
-                  </div>
-
+                </div>
             </div>
+
+            <!-- Sherlock Holmes -->
             <div class="col-md-4">
-                <div id="card">
-                    <img src="images/sher2.jpg" alt="Denim Jeans" style="width:100%">
+                <div class="product-card">
+                    <img src="images/sher2.jpg" alt="Sherlock Holmes">
                     <h3>Sherlock Holmes</h3>
                     <p>- James Lovegrove</p>
                     <p class="price">$32.99</p>
                     <p><button>Add to Cart</button></p>
-                  </div>
-
+                </div>
             </div>
+
+            <!-- Sherlock Wild Street -->
             <div class="col-md-4">
-                <div id="card">
-                    <img src="images/sher1.jpg" alt="Denim Jeans" style="width:100%">
+                <div class="product-card">
+                    <img src="images/sher1.jpg" alt="Sherlock Wild Street">
                     <h3>Sherlock Wild Street</h3>
-                    <p>- Canon Doyal</p>
+                    <p>- Canon Doyle</p>
                     <p class="price">$21.99</p>
                     <p><button>Add to Cart</button></p>
-                  </div>
-
+                </div>
             </div>
+
+            <!-- Sherlock and Strange Woman -->
             <div class="col-md-4">
-                <div id="card">
-                    <img src="images/harry3.jpg " alt="Denim Jeans" style="width:100%">
+                <div class="product-card">
+                    <img src="images/harry3.jpg" alt="Sherlock and Strange Woman">
                     <h3>Sherlock and Strange Woman</h3>
-                    <p>- Canon Doyal</p>
+                    <p>- Canon Doyle</p>
                     <p class="price">$15.99</p>
                     <p><button>Add to Cart</button></p>
-                  </div>
-
+                </div>
             </div>
+
+            <!-- Harry Potter and the Cursed Child -->
             <div class="col-md-4">
-                <div id="card">
-                    <img src="images/harry1.jpg" alt="Denim Jeans" style="width:100%">
-                    <h3>Harry Potter And The Curesed Child</h3>
+                <div class="product-card">
+                    <img src="images/harry1.jpg" alt="Harry Potter And The Cursed Child">
+                    <h3>Harry Potter And The Cursed Child</h3>
+                    <p>- J.K. Rowling</p>
                     <p class="price">$19.99</p>
-                    <p>- J.K. Rowling</p>
                     <p><button>Add to Cart</button></p>
-                  </div>
-
+                </div>
             </div>
-            <div class="col-md-4">
-                <div id="card">
-                    <img src="images/harry2.jpg" alt="Denim Jeans" style="width:100%">
-                    <h3>Harry Potter And The Philospher's stone</h3>
-                    <p class="price">$31.99</p>
-                    <p>- J.K. Rowling</p>
-                    <p><button>Add to Cart</button></p>
-                  </div>
 
+            <!-- Harry Potter and the Philosopher's Stone -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="images/harry2.jpg" alt="Harry Potter And The Philosopher's Stone">
+                    <h3>Harry Potter And The Philosopher's Stone</h3>
+                    <p>- J.K. Rowling</p>
+                    <p class="price">$31.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
             </div>
         </div>
     </div>

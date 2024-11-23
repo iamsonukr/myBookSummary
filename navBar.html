@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Navigation Bar</title>
 </head>
 <style>
@@ -12,49 +12,8 @@ body{
     padding: 0px;
 }
 
-.navbar {
-    background-color: #000; /* Dark background color */
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    margin: 0px;
-}
+/* Navbar styling */
 
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 20px 0px;
-    margin: 0px;
-}
-
-.nav-list li {
-    margin: 0 20px; /* Adjust spacing between items */
-    position: relative;
-}
-
-.nav-list li a {
-    color: #fff; /* White text color */
-    text-decoration: none;
-    font-size: 18px; /* Adjust font size */
-}
-
-.nav-list li:not(:last-child)::after {
-    content: '|';
-    color: #fff; /* White separator */
-    margin-left: 20px; /* Space between text and separator */
-    position: absolute;
-    right: -30px; /* Adjust the position of the separator */
-}
-
-.nav-list li:last-child::after {
-    display: none; /* Hide separator for the last item */
-}
 
 </style>
 <body>
